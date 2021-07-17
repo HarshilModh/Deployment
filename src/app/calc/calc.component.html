@@ -1,0 +1,20 @@
+<div class="main">
+A : <input type="number" class="txt" [(ngModel)]="a" />
+<br>
+B : <input type="number" class="txt" [(ngModel)]="b"  />
+<br> 
+<br>
+<br>
+<input type="radio" value="Addition" id="Addition" name="Choice" (click)="add()" />
+Addition &nbsp; &nbsp; &nbsp;
+<input type="radio" value="Subtraction"id="Subtraction" name="Choice" (click)="sub()" />
+Subtraction &nbsp; &nbsp; &nbsp;
+<input type="radio" value="Multiplication" name="Choice" (click)="Mul()"/>Multiplication &nbsp; &nbsp; &nbsp;
+<input type="radio" value="Division"name="Choice" (click)="Div()"/>Division &nbsp; &nbsp;<br><br><br><br>
+<span class="Res" *ngIf="d!=''">
+   
+    {{d}} = {{c}}
+</span> 
+
+
+</div>

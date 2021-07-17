@@ -1,0 +1,18 @@
+<h2>List Users</h2>
+
+<table border="1">
+    <tr>
+        <th>FirstName</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Action</th>
+    </tr>
+
+    <tr *ngFor="let u of users">
+        <td>{{u.FirstName}}</td>
+        <td>{{u.Email}}</td>
+        <td>{{u.Password}}</td>
+    <td><a routerLink="/edituser/{{u.Email}}">Edit</a>  | <button (click)="deleteUser(u.Email)" >Delete</button> </td>
+    </tr>
+
+</table>
