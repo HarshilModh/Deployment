@@ -4,10 +4,10 @@ const path = require("path")
 
 const app = express()
 
-app.use(express.static(__dirname+"/dist/c-tf21-mean"));
+app.use(express.static(__dirname+"/dist/angular1"));
 
 app.get("/*",function(req,res){
-    res.sendFile(path.join(__dirname+"/c-tf21-mean/index.html"));  
+    res.sendFile(path.join(__dirname+"/angular1/index.html"));  
 });
 
 app.listen(process.env.PORT || 8080 );
